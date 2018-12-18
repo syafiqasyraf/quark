@@ -1,0 +1,134 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+    <style>
+            h1{
+            text-align: center;
+            margin-bottom: 30px;
+
+        }
+        img{
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        height: auto;
+
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+  
+    td{
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    div .original{
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    text-align:justify;
+    }
+    #map {
+        height: 500px;
+      }
+    body{
+        background-color: #ff6666;
+        font-size:20px;
+    }
+    body h2{
+        color:#2BAA11;
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+     <h1>Cameroon Highlands</h1>
+     <img src="http://www.clippingpix.com/wp-content/uploads/2018/11/image6.jpg" alt="Langkawi"style="width: 70%;">
+     <div class="original">
+    <p>Cameron Highlands in Pahang is one of Malaysia's most popular tourist destinations, a collection of peaceful townships perched 1500 meters high on a nest of serene mountains. Cooling resorts, tea plantations and strawberry farms sprawl lazily across lush valleys and meandering hillslopes, the perfect setting for a relaxing holiday.
+
+            The sea of tranquility, pleasant landscapes and cold climate impart a special experience upon the multitudes of visitors each year. Meanwhile, a different world lies hidden away among the natural surroundings - a rainforest ecosystem rich with the wonders of nature, long held with fascination by researchers and naturalists across the world.</p>
+    <h2>History</h2>
+    <p>Cameron Highlands was discovered in 1885 by English surveyor William Cameron, under a commission by the colonial government. Forging a path through dense vegetation, he reached a magnificent and sublime plateau ‘shut up in the mountains' along the vast Titiwangsa Range. Yet, the place lay unperturbed for 40 years, until British Administrator Sir George Maxwell developed it as a hill station.</p>
+<h2> Travel Information</h2>
+<table>
+    <tr>
+        <td>Foreign Adult</td>
+        <td>RM 30</td>
+    </tr>
+    <tr>
+        <td>Foreign Child</td>
+        <td>RM 10(6-18 years)5 and below no charge</td>
+    </tr>
+    <tr>
+        <td>Malaysian Adult</td>
+        <td>RM 15</td>
+    </tr>
+    <tr>
+        <td>Malaysian Senior</td>
+        <td>RM 7(60 years and above)</td>
+    </tr>
+    <tr>
+        <td>Malaysian Child</td>
+        <td>RM(7-18 years)6 and below no charge</td>
+    </tr>
+</table>
+<p>Tourists in Cameron Highlands can expect a peaceful community with a laid back outlook of life. There are plenty of facilities and amenities expected of a modern town, including banks, clinics, restaurants, even a shopping mall (Cameron Square). Walking around is mostly safe at day or night, but you should always keep your valuables in a safe place and not leave them lying around.</p>
+
+<div id="gConnect" class="button">
+      <button class="g-signin"
+          data-scope="email"
+          data-clientid="841077041629.apps.googleusercontent.com"
+          data-callback="onSignInCallback"
+          data-theme="dark"
+          data-cookiepolicy="single_host_origin">
+      </button>
+      <!-- Textarea for outputting data -->
+      <div id="response" class="hide">
+        <textarea id="responseContainer" style="width:100%; height:150px"></textarea>
+      </div>
+    </div>
+
+<gcse:search></gcse:search>
+
+<div id="map"></div>
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAE5diKZlnY9wtqL1xXmDMtkdaIAxB0m48&callback=initMap"
+  async defer></script>
+  <script>
+    (function() {
+      var cx = '000888210889775888983:pqb3ch1ewhg';
+      var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//www.google.com/cse/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+
+
+
+</div>
+</body>
+</html>
